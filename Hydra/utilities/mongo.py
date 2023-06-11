@@ -1,5 +1,5 @@
-# Aditya Halder // @AdityaHalder
-from AdityaHalder.utilities import dbb
+# HE HE U KANGER 
+from Hydra.utilities import dbb
 
 Rbun = dbb["RBAN"]
 
@@ -24,7 +24,7 @@ async def kaalub_info(user):
         return kk["reason"]
 
 
-# Aditya Halder // @AdityaHalder
+# HE HE I KNOW KIDS COPY'S FATHER'S CONTENT 
 
 Lbun = dbb["LBAN"]
 
