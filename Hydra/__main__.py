@@ -93,8 +93,8 @@ async def initiate_bot():
             console.print(f"\n[red] Stopping Bot bye")
             return
         try:
-            await client.join_chat("@Hyper_Speed0")
-            await client.join_chat("@FutureCity005")
+            await client.join_chat("Hyper_Speed0")
+            await client.join_chat("FutureCity005")
         except:
             pass
         console.print(f"├[red] UserBot Started as {ASSNAME}")
@@ -118,9 +118,9 @@ async def start(_, message):
 Pʀᴇᴍɪᴜᴍ Tᴇʟᴇɢʀᴀᴍ Usᴇʀ Bᴏᴛ.
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┣★ Oᴡɴᴇʀ'xD› : [Aᴅɪᴛʏᴀ Hᴀʟᴅᴇʀ](https://t.me/adityahalder)
-┣★ Uᴘᴅᴀᴛᴇs ›› : [Aᴅɪᴛʏᴀ Sᴇʀᴠᴇʀ](https://t.me/adityaserver)
-┣★ Sᴜᴘᴘᴏʀᴛ » : [Aᴅɪᴛʏᴀ Dɪsᴄᴜs](https://t.me/adityadiscus)
+┣★ Oᴡɴᴇʀ'xD› : [𝗛ʏᴘᴇʀ 𝗦ᴘᴇᴇᴅ™](https://t.me/Hyper_Speed0)
+┣★ Uᴘᴅᴀᴛᴇs ›› : [𝗛ʏᴘᴇʀ 𝗦ᴘᴇᴇᴅ™](https://t.me/Hyper_Speed0)
+┣★ Sᴜᴘᴘᴏʀᴛ » : [𝐅ᴜᴛᴜʀᴇ 𝐂ɪᴛʏ ✘ 𝗛ʏᴘᴇʀ 𝗦ᴘᴇᴇᴅ™](https://t.me/FutureCity005)
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 💞 Cʟɪᴄᴋ Oɴ Dᴇᴘʟᴏʏ Bᴜᴛᴛᴏɴ Tᴏ Mᴀᴋᴇ
