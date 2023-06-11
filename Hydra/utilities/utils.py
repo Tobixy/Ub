@@ -1,4 +1,4 @@
-from AdityaHalder.utilities import mongodb
+from Hydra.utilities import mongodb
 
 
 sudoersdb = mongodb.sudoers
