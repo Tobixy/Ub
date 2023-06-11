@@ -11,11 +11,11 @@ from rich.console import Console
 from rich.table import Table
 from motor.motor_asyncio import AsyncIOMotorClient as KaalXD
 
-from AdityaHalder.config import MONGO_DB_URL, LOG_GROUP_ID, OWNER_ID, STRING_SESSION, SUDO_USERS, UPSTREAM_BRANCH, UPSTREAM_REPO
-from AdityaHalder.modules.clientbot.clientbot import client, robot, pytgcalls
-from AdityaHalder.utilities.misc import sudo
-from AdityaHalder.utilities.times import time_to_seconds
-from AdityaHalder.utilities.tasks import install_requirements
+from Hydra.config import MONGO_DB_URL, LOG_GROUP_ID, OWNER_ID, STRING_SESSION, SUDO_USERS, UPSTREAM_BRANCH, UPSTREAM_REPO
+from Hydra.modules.clientbot.clientbot import client, robot, pytgcalls
+from Hydra.utilities.misc import sudo
+from Hydra.utilities.times import time_to_seconds
+from Hydra.utilities.tasks import install_requirements
 
 
 loop = asyncio.get_event_loop()
@@ -72,11 +72,11 @@ async def initiate_bot():
     os.system("clear")
     header = Table(show_header=True, header_style="bold yellow")
     header.add_column(
-        "Genius Userbot : Best Ever Userbot"
+        "Hʏᴅʀᴀ ᴜʙ 𝟽.𝟻 Userbot : Best Ever Userbot"
     )
     console.print(header)
     with console.status(
-        "[magenta] Genius UserBot Booting...",
+        "[magenta] Hʏᴅʀᴀ ᴜʙ 𝟽.𝟻 UserBot Booting...",
     ) as status:
         console.print("┌ [red]Booting Up The Bot Clients...\n")
         await robot.start()
