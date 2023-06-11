@@ -1,9 +1,9 @@
 {
-    "name": "Genius-Userbot",
-    "logo": "https://te.legra.ph/file/ceee32999a8250a1f7ebb.png",
+    "name": "HYDRA-USERBOT-7.5",
+    "logo": "https://telegra.ph/file/6aab3c8ea829c625c8a49.jpg",
     "description": "An Advanced Premium Music & user Bot For Telegram ID.",
     "keywords": ["music", "voice chat", "userbot"],
-    "repository": "https://github.com/GeniusBoi/Genius-Userbot",
+    "repository": "https://github.com/Otazuki004/Hypdra-V7.50",
     "stack": "container",
     "env": {
         "API_ID": {
