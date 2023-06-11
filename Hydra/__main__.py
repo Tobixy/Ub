@@ -10,13 +10,13 @@ from rich.console import Console
 from rich.table import Table
 from youtubesearchpython import VideosSearch
 
-from AdityaHalder.config import LOG_GROUP_ID, STRING_SESSION
-from AdityaHalder import client, robot, pytgcalls, ASSID, ASSNAME, BOT_ID, BOT_NAME, OWNER_ID
-from AdityaHalder.modules.helpers.filters import command
-from AdityaHalder.modules.helpers.decorators import errors, sudo_users_only
-from AdityaHalder.plugins import ALL_MODULES
-from AdityaHalder.utilities.inline import paginate_modules
-from AdityaHalder.utilities.misc import SUDOERS
+from Hydra.config import LOG_GROUP_ID, STRING_SESSION
+from Hydra import client, robot, pytgcalls, ASSID, ASSNAME, BOT_ID, BOT_NAME, OWNER_ID
+from Hydra.modules.helpers.filters import command
+from Hydra.modules.helpers.decorators import errors, sudo_users_only
+from Hydra.plugins import ALL_MODULES
+from Hydra.utilities.inline import paginate_modules
+from Hydra.utilities.misc import SUDOERS
 
 loop = asyncio.get_event_loop()
 console = Console()
@@ -38,7 +38,7 @@ async def initiate_bot():
         )
         for all_module in ALL_MODULES:
             imported_module = importlib.import_module(
-                "AdityaHalder.plugins." + all_module
+                "Hydra.plugins." + all_module
             )
             if (
                 hasattr(imported_module, "__MODULE__")
@@ -60,18 +60,18 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green] 🥀 Genius Userbot Started ✨\n"
+        "[bold green] 🥀 HYDRA UB 7.5 Userbot Started ✨\n"
     )
     try:
         await robot.send_message(
             LOG_GROUP_ID,
-            "<b> 🥀 Genius UserBot is Here ✨</b>",
+            "<b> 🥀 HYDRA UB 7.5 UserBot is Here ✨</b>",
         )
     except Exception as e:
         print(
             "\nBot. Has Failed To Access The Log Group, Be Sure You Have Added Your Bot To Your Log Channel And Promoted As Admin❗"
         )
-        console.print(f"\n[red] Stopping Bot")
+        console.print(f"\n[red] Stopping Bot bye")
         return
     a = await robot.get_chat_member(LOG_GROUP_ID, BOT_ID)
     if a.status != "administrator":
@@ -84,29 +84,29 @@ async def initiate_bot():
         try:
             await client.send_message(
                 LOG_GROUP_ID,
-                "<b>🥀 Genius UserBot is Active ✨</b>",
+                "<b>🥀 HYDRA UB 7.5 UserBot is Active ✨</b>",
             )
         except Exception as e:
             print(
                 "\nUserBot Account Has Failed To Access The Log Group.❗"
             )
-            console.print(f"\n[red] Stopping Bot")
+            console.print(f"\n[red] Stopping Bot bye")
             return
         try:
-            await client.join_chat("AdityaServer")
-            await client.join_chat("AdityaDiscus")
+            await client.join_chat("@Hyper_Speed0")
+            await client.join_chat("@FutureCity005")
         except:
             pass
         console.print(f"├[red] UserBot Started as {ASSNAME}")
         console.print(f"├[green] ID :- {ASSID}")
-        console.print(f"└[red] ✅ Genius UserBot Boot Complete 💯 ...")
+        console.print(f"└[red] ✅ HYDRA UB 7.5 UserBot Boot Complete 💯 ...")
         await idle()
-        console.print(f"\n[red] Userbot Stopped")
+        console.print(f"\n[red] Userbot Stopped bye")
 
 
 home_text_pm = f"""**ʜᴇʟʟᴏ ,
 ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.
-I Aᴍ Gᴇɴɪᴜs, Aɴ Aᴅᴠᴀɴᴄᴇᴅ UsᴇʀBᴏᴛ Wɪᴛʜ Sᴏᴍᴇ Usᴇғᴜʟ Fᴇᴀᴛᴜʀᴇs.**"""
+I Aᴍ Hʏᴅʀᴀ ᴜʙ 𝟽.𝟻, Aɴ Aᴅᴠᴀɴᴄᴇᴅ UsᴇʀBᴏᴛ Wɪᴛʜ Sᴏᴍᴇ Usᴇғᴜʟ Fᴇᴀᴛᴜʀᴇs.**"""
 
 
 @robot.on_message(command(["start"]) & filters.private)
@@ -114,7 +114,7 @@ async def start(_, message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/027283ee9defebc3298b8.png",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-💥 Hᴇʟʟᴏ, I Aᴍ Gᴇɴɪᴜs » Aɴ Aᴅᴠᴀɴᴄᴇᴅ
+💥 Hᴇʟʟᴏ, I Aᴍ Hʏᴅʀᴀ ᴜʙ 𝟽.𝟻 » Aɴ Aᴅᴠᴀɴᴄᴇᴅ
 Pʀᴇᴍɪᴜᴍ Tᴇʟᴇɢʀᴀᴍ Usᴇʀ Bᴏᴛ.
 
 ┏━━━━━━━━━━━━━━━━━━━┓
@@ -124,7 +124,7 @@ Pʀᴇᴍɪᴜᴍ Tᴇʟᴇɢʀᴀᴍ Usᴇʀ Bᴏᴛ.
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 💞 Cʟɪᴄᴋ Oɴ Dᴇᴘʟᴏʏ Bᴜᴛᴛᴏɴ Tᴏ Mᴀᴋᴇ
-Yᴏᴜʀ Oᴡɴ » Gᴇɴɪᴜs Usᴇʀ Bᴏᴛ.
+Yᴏᴜʀ Oᴡɴ » Hʏᴅʀᴀ ᴜʙ 𝟽.𝟻 Usᴇʀ Bᴏᴛ.
 ━━━━━━━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
             [
@@ -152,10 +152,10 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
         """**🥀 Wᴇʟᴄᴏᴍᴇ Tᴏ Hᴇʟᴘ Mᴇɴᴜ Oғ :
-Gᴇɴɪᴜs UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
+Hʏᴅʀᴀ ᴜʙ 𝟽.𝟻 UsᴇʀBᴏᴛ Vᴇʀ : `7.5` 🔥...
 
 💞 Jᴜsᴛ Cʟɪᴄᴋ Oɴ Bᴇʟᴏᴡ Iɴʟɪɴᴇ
-Tᴏ Gᴇᴛ Gᴇɴɪᴜs Cᴏᴍᴍᴀɴᴅs ✨...**
+Tᴏ Gᴇᴛ Hʏᴅʀᴀ ᴜʙ 𝟽.𝟻 Cᴏᴍᴍᴀɴᴅs ✨...**
 """.format(
             first_name=name
         ),
@@ -181,10 +181,10 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""**🥀 Wᴇʟᴄᴏᴍᴇ Tᴏ Hᴇʟᴘ Mᴇɴᴜ Oғ :
-Gᴇɴɪᴜs UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
+Hʏᴅʀᴀ ᴜʙ 𝟽.𝟻 UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
 
 💞 Jᴜsᴛ Cʟɪᴄᴋ Oɴ Bᴇʟᴏᴡ Iɴʟɪɴᴇ
-Tᴏ Gᴇᴛ Gᴇɴɪᴜs Cᴏᴍᴍᴀɴᴅs ✨...**
+Tᴏ Gᴇᴛ Hʏᴅʀᴀ ᴜʙ 𝟽.𝟻 Cᴏᴍᴍᴀɴᴅs ✨...**
  """
     if mod_match:
         module = mod_match.group(1)
