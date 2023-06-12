@@ -4,7 +4,7 @@ import requests
 import Hydra.config
 
 
-@Cleint.on_message(filters.user(config.OWNER_ID) & filters.command("write",prefixes=config.))
+@Cleint.on_message(filters.user(config.OWNER_ID) & filters.command("write",prefixes=config.COMMAND_PREFIXES))
 async def handwriting(_, message):
     if len(message.command) < 2:
         return await message.reply_text("» Give some text to write...")
