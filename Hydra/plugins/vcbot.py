@@ -1,4 +1,4 @@
-# 𝐊𝐚𝐚𝐥 𝐌𝐮𝐬𝐢𝐜 // @𝐢𝐚𝐦𝐤𝐚𝐚𝐥
+# HYDRA MUSIC USERBOT // @EDIS0N9
 
 import os
 import sys
@@ -14,19 +14,19 @@ from typing import Callable
 from pyrogram import Client, filters
 from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserAlreadyParticipant
-from AdityaHalder.modules.cache.admins import set
-from AdityaHalder.modules.clientbot import clientbot, queues
-from AdityaHalder.modules.clientbot.clientbot import client as USER
-from AdityaHalder.modules.helpers.admins import get_administrators
-from AdityaHalder.modules import converter
-from AdityaHalder.modules.downloaders import youtube
-from AdityaHalder.config import que
-from AdityaHalder.modules.cache.admins import admins as a
-from AdityaHalder.modules.helpers.command import commandpro
-from AdityaHalder.modules.helpers.filters import command, other_filters
-from AdityaHalder.modules.helpers.decorators import SUDO_USERS, errors, sudo_users_only
-from AdityaHalder.modules.helpers.errors import DurationLimitError
-from AdityaHalder.modules.helpers.gets import get_url, get_file_name
+from Hydra.modules.cache.admins import set
+from Hydra.modules.clientbot import clientbot, queues
+from Hydra.modules.clientbot.clientbot import client as USER
+from Hydra.modules.helpers.admins import get_administrators
+from Hydra.modules import converter
+from Hydra.modules.downloaders import youtube
+from Hydra.config import que
+from Hydra.modules.cache.admins import admins as a
+from Hydra.modules.helpers.command import commandpro
+from Hydra.modules.helpers.filters import command, other_filters
+from Hydra.modules.helpers.decorators import SUDO_USERS, errors, sudo_users_only
+from Hydra.modules.helpers.errors import DurationLimitError
+from Hydra.modules.helpers.gets import get_url, get_file_name
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputStream
 from pytgcalls.types.input_stream import InputAudioStream
@@ -44,7 +44,7 @@ from yt_dlp.utils import (
     UnavailableVideoError,
     XAttrMetadataError,
 )
-from AdityaHalder.utilities.misc import SUDOERS
+from Hydra.utilities.misc import SUDOERS
 # plus
 chat_id = None
 useer = "NaN"
@@ -176,7 +176,7 @@ async def play(_, message: Message):
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
-        await lel.edit("**💥 𝐊𝐚𝐚𝐥🤞𝐀𝐝𝐝𝐞𝐝 💿 𝐒𝐨𝐧𝐠❗️\n🔊 𝐀𝐭 💞 𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧 » `{}` 🌷 ...**".format(position),
+        await lel.edit("**💥 HYDRA🤞𝐀𝐝𝐝𝐞𝐝 💿 𝐒𝐨𝐧𝐠❗️\n🔊 𝐀𝐭 💞 𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧 » `{}` 🌷 ...**".format(position),
     )
     else:
         await clientbot.pytgcalls.join_group_call(
@@ -189,7 +189,7 @@ async def play(_, message: Message):
                 stream_type=StreamType().local_stream,
             )
 
-        await lel.edit("**💥 𝐊𝐚𝐚𝐥🤞𝐌𝐮𝐬𝐢𝐜 🎸 𝐍𝐨𝐰 💞\n🔊 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 😍 𝐎𝐏 🥀 ...**".format(),
+        await lel.edit("**💥 HYDRA🤞𝐌𝐮𝐬𝐢𝐜 🎸 𝐍𝐨𝐰 💞\n🔊 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 😍 𝐎𝐏 🥀 ...**".format(),
         )
 
     return await lel.delete()
