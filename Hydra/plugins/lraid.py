@@ -1,21 +1,21 @@
-# Kang With Credit » @AdityaHalder
+# HUH U COME AGAIN, I THINK U R BIGGEST KAMGERS OF YEAR GO AWAY MF
 
 import random
 from typing import Tuple
 from pyrogram import Client
 from pyrogram import filters
 from traceback import format_exc
-from AdityaHalder.utilities.data import *
-from AdityaHalder.modules.helpers.filters import command
+from Hydra.utilities.data import *
+from Hydra.modules.helpers.filters import command
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import (
     InlineKeyboardButton,
     InlineQueryResultArticle,
     InputTextMessageContent,
     Message)
-from AdityaHalder.utilities.mongo import loveub_info, rlove, runlove
-from AdityaHalder.modules.helpers.decorators import errors, sudo_users_only
-from AdityaHalder.utilities.misc import SUDOERS
+from Hydra.utilities.mongo import loveub_info, rlove, runlove
+from Hydra.modules.helpers.decorators import errors, sudo_users_only
+from Hydra.utilities.misc import SUDOERS
 
 
 async def iter_chats(client: Client):
