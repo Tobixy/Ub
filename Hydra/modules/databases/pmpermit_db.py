@@ -1,12 +1,12 @@
-# Aditya Halder
+# THE GOD FATHER EDISON 
 import asyncio
-from AdityaHalder.modules.databases import cli
+from Hydra.modules.databases import cli
 
 collection = cli["Kaal"]["pmpermit"]
 
 PMPERMIT_MESSAGE = (
     "**ᴡᴀʀɴɪɴɢ!⚠️ ᴘʟᴢ ʀᴇᴀᴅ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴄᴀʀᴇꜰᴜʟʟʏ..\n\n**"
-    "**ɪ'ᴍ ɢᴇɴɪᴜs ᴜꜱᴇʀʙᴏᴛ ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ᴍʏ ᴍᴀꜱᴛᴇʀ ꜰʀᴏᴍ ꜱᴘᴀᴍᴍᴇʀꜱ.**"
+    "**ɪ'ᴍ HYDRA ᴜꜱᴇʀʙᴏᴛ ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ᴍʏ ᴍᴀꜱᴛᴇʀ ꜰʀᴏᴍ ꜱᴘᴀᴍᴍᴇʀꜱ.**"
     "**ɪꜰ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀ ꜱᴘᴀᴍᴍᴇʀ ᴛʜᴇɴ ᴘʟᴢ ᴡᴀɪᴛ!.\n\n**"
     "**ᴜɴᴛɪʟ ᴛʜᴇɴ, ᴅᴏɴ'ᴛ ꜱᴘᴀᴍ, ᴏʀ ʏᴏᴜ'ʟʟ ɢᴇᴛ ʙʟᴏᴄᴋᴇᴅ ᴀɴᴅ ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ ᴍᴇ, ꜱᴏ ʙᴇ ᴄᴀʀᴇꜰᴜʟʟ ᴛᴏ ꜱᴇɴᴅ ᴀɴʏ ᴍᴇꜱꜱᴀɢᴇꜱ!**"
 )
