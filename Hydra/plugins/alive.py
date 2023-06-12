@@ -1,10 +1,10 @@
-# AdityaHalder
+# HUH WHY U SEEING MY CODES, BAKK BSDK JALDI U KAMGER
 import asyncio
 from pyrogram import *
 from pyrogram.types import *
-from AdityaHalder.modules.helpers.basics import edit_or_reply
-from AdityaHalder.modules.helpers.filters import command
-from AdityaHalder.utilities.misc import SUDOERS
+from Hydra.modules.helpers.basics import edit_or_reply
+from Hydra.modules.helpers.filters import command
+from Hydra.utilities.misc import SUDOERS
 
 
 @Client.on_message(command(["alive"]) & SUDOERS)
