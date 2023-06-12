@@ -10,9 +10,9 @@ from pyrogram.types import (
     InlineQueryResultArticle,
     InputTextMessageContent,
     Message)
-from AdityaHalder.config import *
-from AdityaHalder.utilities.data import *
-from AdityaHalder.utilities.mongo import * 
+from Hydra.config import *
+from Hydra.utilities.data import *
+from Hydra.utilities.mongo import * 
 
 
 @Client.on_message( ~filters.me & filters.incoming)
