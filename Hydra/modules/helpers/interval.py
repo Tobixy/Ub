@@ -1,4 +1,4 @@
-# Aditya Halder // Genius UserBot
+# FUCK I NEED GF
 
 import re
 
