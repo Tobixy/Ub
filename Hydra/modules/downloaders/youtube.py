@@ -1,6 +1,6 @@
 from os import path
 from yt_dlp import YoutubeDL
-from AdityaHalder.modules.helpers.errors import DurationLimitError
+from Hydra.modules.helpers.errors import DurationLimitError
 
 ydl_opts = {
     "format": "bestaudio/best",
