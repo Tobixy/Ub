@@ -6,7 +6,7 @@ import dns.resolver
 import pymongo
 import motor.motor_asyncio
 
-from AdityaHalder.config import MONGO_DB_URL
+from Hydra.config import MONGO_DB_URL
 
 cli = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL)
 USERBOT = "KAAL"
