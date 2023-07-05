@@ -18,3 +18,4 @@ git+https://github.com/Otazuki004/downloader1
 tgcrypto
 gitpython
 heroku3
+git
