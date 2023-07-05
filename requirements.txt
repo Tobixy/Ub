@@ -19,3 +19,4 @@ tgcrypto
 gitpython
 heroku3
 git
+node 15.0.1
